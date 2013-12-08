@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06E6B13A-F12E-4A6F-A9A5-093C67E76EDD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsApp.DesignPattern</RootNamespace>
+    <AssemblyName>ConsApp.DesignPattern</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BehavioralPatterns.ChainOfResponsibility\BehavioralPatterns.ChainOfResponsibility.csproj">
+      <Project>{EBC12786-4509-41C4-979E-14AEFF778A38}</Project>
+      <Name>BehavioralPatterns.ChainOfResponsibility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BehavioralPatterns.Command\BehavioralPatterns.Command.csproj">
+      <Project>{06FB7816-F674-428A-8052-2D00D3FEA890}</Project>
+      <Name>BehavioralPatterns.Command</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BehavioralPatterns.Iterator\BehavioralPatterns.Iterator.csproj">
+      <Project>{9CB40D7D-CF5E-4589-B157-871110F2DE3C}</Project>
+      <Name>BehavioralPatterns.Iterator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BehavioralPatterns.Mediator\BehavioralPatterns.Mediator.csproj">
+      <Project>{EC08DBB7-D8B1-405A-9737-40A32E3645DA}</Project>
+      <Name>BehavioralPatterns.Mediator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BehavioralPatterns.Memento\BehavioralPatterns.Memento.csproj">
+      <Project>{C739E418-DEA3-4E41-AB96-2F3DF680FA70}</Project>
+      <Name>BehavioralPatterns.Memento</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BehavioralPatterns.State\BehavioralPatterns.State.csproj">
+      <Project>{B011AF7C-1482-4306-A606-791C0C169594}</Project>
+      <Name>BehavioralPatterns.State</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BehavioralPatterns.Strategy\BehavioralPatterns.Strategy.csproj">
+      <Project>{6B299600-0FD7-4F6C-A74E-E765AA6EA0E4}</Project>
+      <Name>BehavioralPatterns.Strategy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BehavioralPatterns.Template\BehavioralPatterns.Template.csproj">
+      <Project>{4EDCD0EE-CC6F-4B8D-B38B-4E5BA50DF70B}</Project>
+      <Name>BehavioralPatterns.Template</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BehavioralPatterns.Visitor\BehavioralPatterns.Visitor.csproj">
+      <Project>{2E081924-40DA-4FEC-A93D-DB04A45AF5C7}</Project>
+      <Name>BehavioralPatterns.Visitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BehavioralPattrerns.Observer\BehavioralPattrerns.Observer.csproj">
+      <Project>{687D2A9E-6AE2-448D-9F8A-710D6931187B}</Project>
+      <Name>BehavioralPattrerns.Observer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CreationalPatterns.AbstractFactory\CreationalPatterns.AbstractFactory.csproj">
+      <Project>{9B9DC59E-A743-4B4A-9E15-75D0A748EFBE}</Project>
+      <Name>CreationalPatterns.AbstractFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CreationalPatterns.Builder\CreationalPatterns.Builder.csproj">
+      <Project>{B1AF8BBD-3CF4-4C61-A23E-7610C12A2CEF}</Project>
+      <Name>CreationalPatterns.Builder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CreationalPatterns.Factory\CreationalPatterns.Factory.csproj">
+      <Project>{032FE180-ABC4-4E61-B556-EC267F0DE7F3}</Project>
+      <Name>CreationalPatterns.Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CreationalPatterns.Prototype\CreationalPatterns.Prototype.csproj">
+      <Project>{EC525250-EE4C-4FD7-AADC-5681F416ED55}</Project>
+      <Name>CreationalPatterns.Prototype</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CreationalPatterns.Singleton\CreationalPatterns.Singleton.csproj">
+      <Project>{3C163469-DA36-4884-B7C3-ADDCD45F10FB}</Project>
+      <Name>CreationalPatterns.Singleton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StructuralPatterns.Adapter\StructuralPatterns.Adapter.csproj">
+      <Project>{7F32F8C6-2B4C-499A-BF9C-78FED4728A1E}</Project>
+      <Name>StructuralPatterns.Adapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StructuralPatterns.Bridge\StructuralPatterns.Bridge.csproj">
+      <Project>{D81361C6-0A1F-4D1A-8DE0-A8E3CE12D23D}</Project>
+      <Name>StructuralPatterns.Bridge</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StructuralPatterns.Composite\StructuralPatterns.Composite.csproj">
+      <Project>{CB9E5CB1-1787-48D7-8064-DF2D78F523CF}</Project>
+      <Name>StructuralPatterns.Composite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StructuralPatterns.Decorator\StructuralPatterns.Decorator.csproj">
+      <Project>{26FCEF6A-D79B-4648-AAA4-31F864AC1754}</Project>
+      <Name>StructuralPatterns.Decorator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StructuralPatterns.Facade\StructuralPatterns.Facade.csproj">
+      <Project>{D54FD1F0-C738-4EE1-A8A5-7587C99E5E7F}</Project>
+      <Name>StructuralPatterns.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StructuralPatterns.Flyweight\StructuralPatterns.Flyweight.csproj">
+      <Project>{5CBA55B8-DE92-4FED-BDEF-9B241386B68B}</Project>
+      <Name>StructuralPatterns.Flyweight</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StructuralPatterns.Proxy\StructuralPatterns.Proxy.csproj">
+      <Project>{C2EFF824-6A38-4F2C-B5CD-C5CE8964C896}</Project>
+      <Name>StructuralPatterns.Proxy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\barbeque.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\cappuccino.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\church.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\dinner.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flowers.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\lemonade.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\pasta.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\pot.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Restaurant.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\spring.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\veggies.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

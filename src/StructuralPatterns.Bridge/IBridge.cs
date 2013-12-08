@@ -1,0 +1,12 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace StructuralPatterns.Bridge
+{
+    public interface IBridge
+    {
+        string Operation();
+    }
+}
